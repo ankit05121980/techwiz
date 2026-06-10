@@ -86,16 +86,21 @@ export function Testimonials() {
           >
             <ChevronLeft className="size-5" />
           </button>
-          <div className="flex gap-2">
+          <div className="flex">
             {testimonials.map((_, i) => (
               <button
                 key={i}
                 onClick={() => go(i)}
                 aria-label={`Go to testimonial ${i + 1}`}
-                className={`h-2 rounded-full transition-all ${
-                  i === index ? "w-6 bg-primary" : "w-2 bg-border"
-                }`}
-              />
+                aria-current={i === index}
+                className="grid size-7 place-items-center"
+              >
+                <span
+                  className={`h-2 rounded-full transition-all ${
+                    i === index ? "w-6 bg-primary" : "w-2 bg-border"
+                  }`}
+                />
+              </button>
             ))}
           </div>
           <button

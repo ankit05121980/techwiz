@@ -19,45 +19,33 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl container-px py-16 md:py-20">
         <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-1.5 text-xs font-semibold text-primary backdrop-blur"
+          <div
+            className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-1.5 text-xs font-semibold text-primary backdrop-blur"
           >
             <span className="relative flex size-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-500 opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-lime-500" />
             </span>
             STEM Programs for Grade 3-12 · Robotics · AI · Coding
-          </motion.div>
+          </div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.05 }}
-            className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl"
+          <h1
+            className="mt-6 animate-fade-up text-4xl font-bold leading-[1.05] tracking-tight [animation-delay:60ms] sm:text-5xl lg:text-6xl xl:text-7xl"
           >
             Turning Curious Kids Into{" "}
             <span className="text-gradient">Future Innovators</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.12 }}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
+          <p
+            className="mt-6 max-w-xl animate-fade-up text-lg leading-relaxed text-muted [animation-delay:120ms] md:text-xl"
           >
             Hands-on Robotics, AI, Coding &amp; Electronics programs for students in
             Grade 3-12. Real projects, expert mentors, and the confidence to build
             what&apos;s next.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.18 }}
-            className="mt-8 flex flex-col gap-3 sm:flex-row"
+          <div
+            className="mt-8 flex animate-fade-up flex-col gap-3 [animation-delay:180ms] sm:flex-row"
           >
             <Button size="lg" onClick={() => setDemoOpen(true)}>
               Book Free Demo Class <ArrowRight className="size-5" />
@@ -65,28 +53,22 @@ export function Hero() {
             <ButtonLink href="/courses" size="lg" variant="outline">
               <PlayCircle className="size-5" /> Explore Programs
             </ButtonLink>
-          </motion.div>
+          </div>
 
-          <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.28 }}
-            className="mt-8 flex flex-wrap gap-x-6 gap-y-2"
+          <ul
+            className="mt-8 flex animate-fade-up flex-wrap gap-x-6 gap-y-2 [animation-delay:260ms]"
           >
             {trustBadges.map((b) => (
               <li key={b} className="flex items-center gap-2 text-sm font-medium text-foreground/80">
                 <CheckCircle2 className="size-4 text-lime-500" /> {b}
               </li>
             ))}
-          </motion.ul>
+          </ul>
         </div>
 
         {/* Animated counters */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.36 }}
-          className="mt-14 grid max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4"
+        <div
+          className="mt-14 grid max-w-3xl animate-fade-up grid-cols-2 gap-4 [animation-delay:340ms] sm:grid-cols-4"
         >
           {stats.map((s) => (
             <div
@@ -101,7 +83,7 @@ export function Hero() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       <Modal open={demoOpen} onClose={() => setDemoOpen(false)} title="Book a free demo class">

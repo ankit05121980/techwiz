@@ -189,14 +189,14 @@ export function AdmissionForm({ defaultProgram = "" }: { defaultProgram?: string
                 </FormField>
                 <div className="rounded-2xl border border-border bg-background-subtle p-4 text-sm">
                   <p className="font-semibold">Review your details</p>
-                  <dl className="mt-2 grid gap-1 text-muted sm:grid-cols-2">
-                    <div><dt className="inline font-medium text-foreground">Student: </dt>{form.studentName || "—"}</div>
-                    <div><dt className="inline font-medium text-foreground">Class: </dt>{form.classLevel || "—"}</div>
-                    <div><dt className="inline font-medium text-foreground">School: </dt>{form.school || "—"}</div>
-                    <div><dt className="inline font-medium text-foreground">Parent: </dt>{form.parentName || "—"}</div>
-                    <div><dt className="inline font-medium text-foreground">Phone: </dt>{form.phone || "—"}</div>
-                    <div><dt className="inline font-medium text-foreground">Email: </dt>{form.email || "—"}</div>
-                  </dl>
+                  <div className="mt-2 grid gap-1 text-muted sm:grid-cols-2">
+                    <div><span className="font-medium text-foreground">Student: </span>{form.studentName || "—"}</div>
+                    <div><span className="font-medium text-foreground">Class: </span>{form.classLevel || "—"}</div>
+                    <div><span className="font-medium text-foreground">School: </span>{form.school || "—"}</div>
+                    <div><span className="font-medium text-foreground">Parent: </span>{form.parentName || "—"}</div>
+                    <div><span className="font-medium text-foreground">Phone: </span>{form.phone || "—"}</div>
+                    <div><span className="font-medium text-foreground">Email: </span>{form.email || "—"}</div>
+                  </div>
                 </div>
               </>
             )}

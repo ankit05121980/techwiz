@@ -57,7 +57,7 @@ export function CourseCard({ course }: { course: Course }) {
           )}
         </div>
 
-        <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-border pt-4 text-sm">
+        <div className="mt-5 grid grid-cols-2 gap-3 border-t border-border pt-4 text-sm">
           <div className="flex items-center gap-2 text-muted">
             <Clock className="size-4 text-primary" />
             <span>{course.duration.split("·")[0].trim()}</span>
@@ -66,13 +66,14 @@ export function CourseCard({ course }: { course: Course }) {
             <Layers className="size-4 text-primary" />
             <span>{course.projectsCount}</span>
           </div>
-        </dl>
+        </div>
 
         <Link
           href={`/courses/${course.slug}`}
           className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:gap-3"
         >
-          Learn More <ArrowRight className="size-4 transition-all" />
+          Learn More<span className="sr-only"> about {course.name}</span>{" "}
+          <ArrowRight className="size-4 transition-all" />
         </Link>
       </div>
     </motion.article>

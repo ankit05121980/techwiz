@@ -38,9 +38,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               Explore
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-3 text-sm">
               {navLinks.map((l) => (
                 <li key={l.href}>
@@ -58,9 +58,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               Programs
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-3 text-sm">
               {courses.map((c) => (
                 <li key={c.slug}>
@@ -76,9 +76,9 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
               Stay in the loop
-            </h4>
+            </h3>
             <p className="text-sm text-muted">
               Get STEM tips, event invites, and demo-class openings.
             </p>
