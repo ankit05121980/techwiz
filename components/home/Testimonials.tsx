@@ -1,12 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
+import { InitialsAvatar } from "@/components/ui/Artwork";
 import { testimonials } from "@/lib/data";
 
 export function Testimonials() {
@@ -63,9 +63,7 @@ export function Testimonials() {
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-4">
-                <div className="relative size-12 overflow-hidden rounded-full border border-border">
-                  <Image src={t.avatar} alt={t.name} fill sizes="48px" className="object-cover" />
-                </div>
+                <InitialsAvatar name={t.name} className="size-12 shrink-0 text-sm" />
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-semibold">{t.name}</span>

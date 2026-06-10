@@ -621,6 +621,17 @@ export const faqs: { question: string; answer: string }[] = [
 /* -------------------------------------------------------------------------- */
 /*  Interest / Program options for forms                                      */
 /* -------------------------------------------------------------------------- */
+/** Map a project/gallery category to a themed icon. */
+export const categoryIcon: Record<string, IconName> = {
+  Robotics: "Bot",
+  Coding: "Code2",
+  Electronics: "CircuitBoard",
+  Workshops: "Presentation",
+  Competitions: "Trophy",
+  IoT: "Wifi",
+  "Artificial Intelligence": "BrainCircuit",
+};
+
 export const interestAreas = [
   "Robotics",
   "Artificial Intelligence",

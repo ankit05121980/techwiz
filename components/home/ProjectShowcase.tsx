@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { itemVariants, RevealGroup } from "@/components/ui/Reveal";
 import { Badge } from "@/components/ui/Badge";
-import { showcaseProjects } from "@/lib/data";
+import { Artwork } from "@/components/ui/Artwork";
+import { categoryIcon, showcaseProjects } from "@/lib/data";
 
 export function ProjectShowcase() {
   return (
@@ -24,12 +24,10 @@ export function ProjectShowcase() {
             variants={itemVariants}
             className="group relative aspect-[4/3] overflow-hidden rounded-3xl border border-border shadow-soft"
           >
-            <Image
-              src={p.image}
-              alt={p.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+            <Artwork
+              seed={p.title}
+              icon={categoryIcon[p.category]}
+              className="transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent" />
             <div className="absolute left-4 top-4">

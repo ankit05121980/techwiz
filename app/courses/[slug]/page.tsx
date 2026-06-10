@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -13,6 +12,7 @@ import {
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
+import { Artwork } from "@/components/ui/Artwork";
 import { Reveal } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
 import { courses } from "@/lib/data";
@@ -113,14 +113,7 @@ export default async function CourseDetailPage({
 
           <Reveal delay={0.15}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border shadow-soft">
-              <Image
-                src={course.image}
-                alt={`${course.name} program`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-                priority
-              />
+              <Artwork seed={course.slug} icon={course.icon} />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
               <div className="absolute bottom-4 left-4 grid size-14 place-items-center rounded-2xl bg-gradient-to-br from-brand-500 to-lime-500 text-white shadow-soft">
                 <Icon name={course.icon} className="size-7" />

@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { InstagramIcon } from "@/components/ui/SocialIcons";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { itemVariants, RevealGroup } from "@/components/ui/Reveal";
+import { Artwork } from "@/components/ui/Artwork";
 import { instagramPosts } from "@/lib/data";
 import { siteConfig } from "@/lib/site";
 
@@ -28,12 +28,9 @@ export function InstagramFeed() {
             rel="noopener noreferrer"
             className="group relative aspect-square overflow-hidden rounded-2xl border border-border"
           >
-            <Image
-              src={post.src}
-              alt={post.caption}
-              fill
-              sizes="(max-width: 768px) 50vw, 16vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+            <Artwork
+              seed={post.caption}
+              className="transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-brand-600/80 to-lime-600/80 p-2 text-center text-white opacity-0 transition-opacity group-hover:opacity-100">
               <InstagramIcon className="size-6" />

@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { galleryCategories, galleryItems, type GalleryItem } from "@/lib/data";
+import { Artwork } from "@/components/ui/Artwork";
+import { categoryIcon, galleryCategories, galleryItems, type GalleryItem } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export function Gallery() {
@@ -62,12 +62,10 @@ export function Gallery() {
                 item.tall ? "aspect-[3/4]" : "aspect-[4/3]",
               )}
             >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+              <Artwork
+                seed={item.alt}
+                icon={categoryIcon[item.category]}
+                className="transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-navy/70 to-transparent p-3 opacity-0 transition-opacity group-hover:opacity-100">
                 <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur">
@@ -98,10 +96,16 @@ export function Gallery() {
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
-              className="relative h-[70vh] w-full max-w-4xl overflow-hidden rounded-3xl"
+              className="relative aspect-[4/3] w-full max-w-3xl overflow-hidden rounded-3xl border border-white/10"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image src={active.src} alt={active.alt} fill sizes="100vw" className="object-contain" />
+              <Artwork seed={active.alt} icon={categoryIcon[active.category]} />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-5 text-white">
+                <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-medium backdrop-blur">
+                  {active.category}
+                </span>
+                <p className="mt-2 text-lg font-semibold">{active.alt}</p>
+              </div>
             </motion.div>
           </motion.div>
         )}

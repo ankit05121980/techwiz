@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { YoutubeIcon } from "@/components/ui/SocialIcons";
@@ -9,6 +8,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { itemVariants, RevealGroup } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
+import { Artwork } from "@/components/ui/Artwork";
 import { youtubeVideos } from "@/lib/data";
 import { siteConfig } from "@/lib/site";
 
@@ -35,13 +35,10 @@ function VideoCard({ id, title }: { id: string; title: string }) {
           className="absolute inset-0 size-full"
           aria-label={`Play video: ${title}`}
         >
-          <Image
-            src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
-            alt={title}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
-            unoptimized
+          <Artwork
+            seed={title}
+            icon="Bot"
+            className="opacity-95 transition-transform duration-500 group-hover:scale-105"
           />
           <span className="absolute inset-0 flex items-center justify-center bg-navy/30">
             <span className="grid size-16 place-items-center rounded-full bg-red-600 text-white shadow-soft transition-transform group-hover:scale-110">

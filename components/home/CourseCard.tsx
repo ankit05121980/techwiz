@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Layers } from "lucide-react";
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
+import { Artwork } from "@/components/ui/Artwork";
 import { Badge } from "@/components/ui/Badge";
 import { itemVariants } from "@/components/ui/Reveal";
 import type { Course } from "@/lib/data";
@@ -23,12 +23,10 @@ export function CourseCard({ course }: { course: Course }) {
       className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow"
     >
       <div className="relative aspect-[16/10] overflow-hidden">
-        <Image
-          src={course.image}
-          alt={`${course.name} program`}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        <Artwork
+          seed={course.slug}
+          icon={course.icon}
+          className="transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/10 to-transparent" />
         <div className="absolute left-4 top-4">
