@@ -3,10 +3,11 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * Brand logo — uses the original supplied artwork (public/logo.png) as-is,
- * unmodified. Rounded corners only affect the container, not the image.
+ * Brand logo — original supplied artwork with the white background removed
+ * (transparent) so it blends with the page. A dark-mode variant keeps the
+ * wordmark legible. Artwork shapes/colors are unchanged.
  */
-export function Logo({ className, height = 44 }: { className?: string; height?: number }) {
+export function Logo({ className, height = 52 }: { className?: string; height?: number }) {
   return (
     <Link
       href="/"
@@ -14,13 +15,23 @@ export function Logo({ className, height = 44 }: { className?: string; height?: 
       className={cn("inline-flex items-center", className)}
     >
       <Image
-        src="/logo.png"
+        src="/logo-light.png"
         alt="TechWiz"
-        width={333}
-        height={410}
+        width={233}
+        height={268}
         priority
-        sizes="120px"
-        className="w-auto rounded-md"
+        sizes="160px"
+        className="block w-auto dark:hidden"
+        style={{ height }}
+      />
+      <Image
+        src="/logo-dark.png"
+        alt="TechWiz"
+        width={233}
+        height={268}
+        priority
+        sizes="160px"
+        className="hidden w-auto dark:block"
         style={{ height }}
       />
     </Link>

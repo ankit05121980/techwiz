@@ -34,8 +34,8 @@ export function Navbar() {
           : "bg-transparent",
       )}
     >
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between container-px md:h-18">
-        <Logo />
+      <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between container-px md:h-20">
+        <Logo height={58} />
 
         <div className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {

@@ -17,7 +17,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl container-px py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr]">
           <div className="space-y-4">
-            <Logo />
+            <Logo height={72} />
             <p className="max-w-xs text-sm leading-relaxed text-muted">
               {siteConfig.description}
             </p>
