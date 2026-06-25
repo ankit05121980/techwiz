@@ -32,9 +32,9 @@ export const siteConfig = {
   mapEmbed:
     "https://www.google.com/maps?q=Sector+D,+Indore,+Madhya+Pradesh&output=embed",
   socials: {
-    instagram: "https://instagram.com/techwizstem",
+    instagram: "https://instagram.com/techwiz09",
     youtube: "https://youtube.com/@techwizstem",
-    facebook: "https://facebook.com/techwizstem",
+    facebook: "https://www.facebook.com/share/1BMa2AtsSm/?mibextid=wwXIfr",
     linkedin: "https://linkedin.com/company/techwizstem",
     twitter: "https://twitter.com/techwizstem",
   },

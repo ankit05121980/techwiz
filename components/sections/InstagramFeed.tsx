@@ -13,7 +13,7 @@ export function InstagramFeed() {
   return (
     <Section id="instagram" className="bg-background-subtle">
       <SectionHeading
-        eyebrow="@techwizstem"
+        eyebrow="@techwiz09"
         title="Follow the Innovation"
         description="Daily builds, wins, and behind-the-scenes moments from our labs and workshops."
       />
@@ -47,7 +47,7 @@ export function InstagramFeed() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
         >
-          <InstagramIcon className="size-4" /> Follow @techwizstem
+          <InstagramIcon className="size-4" /> Follow @techwiz09
         </a>
       </div>
     </Section>
