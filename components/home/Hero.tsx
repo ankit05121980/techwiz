@@ -13,7 +13,7 @@ export function Hero() {
   const [demoOpen, setDemoOpen] = useState(false);
 
   return (
-    <section className="relative flex min-h-[100svh] items-center overflow-hidden pt-20">
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 md:pt-32">
       {/* Animated lab background */}
       <HeroBackground />
 

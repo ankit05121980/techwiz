@@ -4,10 +4,16 @@ import { cn } from "@/lib/utils";
 
 /**
  * Brand logo — original supplied artwork with the white background removed
- * (transparent) so it blends with the page. A dark-mode variant keeps the
- * wordmark legible. Artwork shapes/colors are unchanged.
+ * (transparent). A dark-mode variant keeps the wordmark legible. Size is
+ * controlled via `imgClassName` (Tailwind height classes + w-auto).
  */
-export function Logo({ className, height = 52 }: { className?: string; height?: number }) {
+export function Logo({
+  className,
+  imgClassName = "h-14",
+}: {
+  className?: string;
+  imgClassName?: string;
+}) {
   return (
     <Link
       href="/"
@@ -20,9 +26,8 @@ export function Logo({ className, height = 52 }: { className?: string; height?: 
         width={233}
         height={268}
         priority
-        sizes="160px"
-        className="block w-auto dark:hidden"
-        style={{ height }}
+        sizes="220px"
+        className={cn("block w-auto dark:hidden", imgClassName)}
       />
       <Image
         src="/logo-dark.png"
@@ -30,9 +35,8 @@ export function Logo({ className, height = 52 }: { className?: string; height?: 
         width={233}
         height={268}
         priority
-        sizes="160px"
-        className="hidden w-auto dark:block"
-        style={{ height }}
+        sizes="220px"
+        className={cn("hidden w-auto dark:block", imgClassName)}
       />
     </Link>
   );
