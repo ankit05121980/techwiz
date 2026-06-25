@@ -88,14 +88,20 @@ export function Footer() {
                 <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
                 <span>
                   {siteConfig.address.line1}, {siteConfig.address.city},{" "}
-                  {siteConfig.address.state} {siteConfig.address.zip}
+                  {siteConfig.address.state}
+                  {siteConfig.address.zip ? ` ${siteConfig.address.zip}` : ""}
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="size-4 shrink-0 text-primary" />
-                <a href={`tel:${siteConfig.phone}`} className="hover:text-primary">
-                  {siteConfig.phoneDisplay}
-                </a>
+                <span className="flex flex-wrap gap-x-2">
+                  <a href={`tel:${siteConfig.phone}`} className="hover:text-primary">
+                    {siteConfig.phoneDisplay}
+                  </a>
+                  <a href={`tel:${siteConfig.phone2}`} className="hover:text-primary">
+                    {siteConfig.phoneDisplay2}
+                  </a>
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="size-4 shrink-0 text-primary" />

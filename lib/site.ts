@@ -5,30 +5,32 @@
  */
 
 export const siteConfig = {
-  name: "TechWiz STEM Academy",
-  shortName: "TechWiz",
+  name: "Techwiz Robotics Hub",
+  shortName: "Techwiz",
   tagline: "Learn. Build. Innovate.",
   description:
     "Hands-on Robotics, AI, Coding, Electronics & IoT programs for students in Grade 3-12. Project-based STEM learning that turns curious kids into future innovators.",
   // Update to your production domain after deploying to Vercel.
-  url: "https://techwiz-stem-academy.vercel.app",
+  url: "https://techwiz-robotics-hub.vercel.app",
   locale: "en_IN",
-  email: "hello@techwizstem.in",
-  phoneDisplay: "+91 98220 14567",
-  phone: "+919822014567",
+  email: "hello@techwizroboticshub.in",
+  phoneDisplay: "+91 99266 68897",
+  phone: "+919926668897",
+  phoneDisplay2: "+91 90390 14714",
+  phone2: "+919039014714",
   // Digits only, international format for wa.me links.
-  whatsapp: "919822014567",
+  whatsapp: "919926668897",
   address: {
-    line1: "3rd Floor, Innovation Hub, Civil Lines",
-    city: "Nagpur",
-    state: "Maharashtra",
-    zip: "440001",
+    line1: "165, Sector-D, Behind Astha Hospital",
+    city: "Indore",
+    state: "Madhya Pradesh",
+    zip: "",
     country: "India",
   },
   hours: "Mon-Sat: 9:00 AM - 7:00 PM",
-  // Google Maps embed (keyless) centered on Nagpur, Maharashtra.
+  // Google Maps embed (keyless) centered on Sector-D, Indore, M.P.
   mapEmbed:
-    "https://www.google.com/maps?q=Civil+Lines,+Nagpur,+Maharashtra+440001&output=embed",
+    "https://www.google.com/maps?q=Sector+D,+Indore,+Madhya+Pradesh&output=embed",
   socials: {
     instagram: "https://instagram.com/techwizstem",
     youtube: "https://youtube.com/@techwizstem",

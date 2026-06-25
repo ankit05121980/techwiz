@@ -39,7 +39,7 @@ export function Testimonials() {
       <SectionHeading
         eyebrow="Testimonials"
         title="Loved by Parents & Students"
-        description="Real stories from families and learners across India who built skills and confidence with TechWiz."
+        description="Real stories from families and learners across India who built skills and confidence with Techwiz."
       />
 
       <div className="relative mx-auto mt-14 max-w-3xl">

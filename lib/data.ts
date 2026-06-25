@@ -1,6 +1,6 @@
 /**
  * Site content. All copy is original (no lorem ipsum) and tailored to
- * TechWiz STEM Academy. Edit here to update content site-wide.
+ * Techwiz Robotics Hub. Edit here to update content site-wide.
  */
 
 export type IconName =
@@ -48,7 +48,7 @@ export const trustBadges = [
 ] as const;
 
 /* -------------------------------------------------------------------------- */
-/*  Why TechWiz                                                                */
+/*  Why Techwiz                                                                */
 /* -------------------------------------------------------------------------- */
 export const whyCards: { icon: IconName; title: string; description: string }[] = [
   {
@@ -411,7 +411,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "My son used to spend hours on games. Now he builds robots and explains circuits to me at dinner. TechWiz completely changed how he sees technology.",
+      "My son used to spend hours on games. Now he builds robots and explains circuits to me at dinner. Techwiz completely changed how he sees technology.",
     name: "Priya Deshmukh",
     role: "Parent of Aarav, Grade 6",
     type: "Parent",
@@ -455,7 +455,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "As a parent I wanted real learning, not just screen time. TechWiz delivers structured, hands-on skills my son genuinely enjoys.",
+      "As a parent I wanted real learning, not just screen time. Techwiz delivers structured, hands-on skills my son genuinely enjoys.",
     name: "Rahul Mehta",
     role: "Parent of Vivaan, Grade 5",
     type: "Parent",
@@ -466,7 +466,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Winning the inter-school robotics challenge with my line-following bot was the best day ever. Thank you TechWiz mentors!",
+      "Winning the inter-school robotics challenge with my line-following bot was the best day ever. Thank you Techwiz mentors!",
     name: "Diya Patel",
     role: "Student, Grade 8",
     type: "Student",
@@ -651,7 +651,7 @@ export const aboutTimeline: { year: string; title: string; description: string }
     year: "2017",
     title: "The First Classroom",
     description:
-      "TechWiz began with a single robotics class of 12 curious students in Nagpur and one big belief: kids learn best by building.",
+      "Techwiz began with a single robotics class of 12 curious students in Nagpur and one big belief: kids learn best by building.",
   },
   {
     year: "2019",
@@ -663,7 +663,7 @@ export const aboutTimeline: { year: string; title: string; description: string }
     year: "2021",
     title: "Going Online",
     description:
-      "We launched live online classes with take-home kits, bringing TechWiz to students across Tier-2 and Tier-3 cities.",
+      "We launched live online classes with take-home kits, bringing Techwiz to students across Tier-2 and Tier-3 cities.",
   },
   {
     year: "2023",
@@ -675,7 +675,7 @@ export const aboutTimeline: { year: string; title: string; description: string }
     year: "2026",
     title: "12,000+ Innovators Strong",
     description:
-      "Today, thousands of students across 60+ partner schools build, compete, and innovate with TechWiz.",
+      "Today, thousands of students across 60+ partner schools build, compete, and innovate with Techwiz.",
   },
 ];
 
@@ -701,7 +701,7 @@ export const aboutValues: { icon: IconName; title: string; description: string }
 /*  YouTube videos (facade — loads iframe on click)                          */
 /* -------------------------------------------------------------------------- */
 export const youtubeVideos: { id: string; title: string }[] = [
-  { id: "ZHa_n0vCD1k", title: "Inside a TechWiz Robotics Lab" },
+  { id: "ZHa_n0vCD1k", title: "Inside a Techwiz Robotics Lab" },
   { id: "Gz9rUNoiHWU", title: "Students Build an Obstacle-Avoiding Robot" },
   { id: "rfscVS0vtbw", title: "Coding for Kids: First Python Project" },
 ];

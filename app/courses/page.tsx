@@ -12,7 +12,7 @@ import { buildMetadata, jsonLdScript, coursesJsonLd, breadcrumbJsonLd } from "@/
 export const metadata: Metadata = buildMetadata({
   title: "STEM Programs for Grade 3-12",
   description:
-    "Explore TechWiz robotics, AI, coding, electronics, and IoT programs designed for every age group from Grade 3 to 12. Project-based, mentor-led, and certified.",
+    "Explore Techwiz robotics, AI, coding, electronics, and IoT programs designed for every age group from Grade 3 to 12. Project-based, mentor-led, and certified.",
   path: "/courses",
 });
 
@@ -63,7 +63,7 @@ export default function CoursesPage() {
       <Section className="bg-background-subtle">
         <SectionHeading
           eyebrow="Every Program Includes"
-          title="The TechWiz Standard"
+          title="The Techwiz Standard"
           description="No matter which track your child joins, they get the same hands-on, mentor-led experience."
         />
         <ul className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-2">

@@ -59,7 +59,7 @@ export function YouTubeSection() {
     <Section id="youtube" className="bg-background">
       <SectionHeading
         eyebrow="Watch & Learn"
-        title="See TechWiz in Action"
+        title="See Techwiz in Action"
         description="Step inside our labs and watch students bring robots, code, and ideas to life."
       />
 

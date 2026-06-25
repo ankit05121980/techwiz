@@ -6,7 +6,7 @@ export function WhatsAppButton() {
   return (
     <a
       href={whatsappLink(
-        "Hi TechWiz! I'd like to know more about your STEM programs and book a free demo class.",
+        "Hi Techwiz! I'd like to know more about your STEM programs and book a free demo class.",
       )}
       target="_blank"
       rel="noopener noreferrer"

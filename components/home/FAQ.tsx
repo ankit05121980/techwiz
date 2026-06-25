@@ -24,7 +24,7 @@ export function FAQ() {
                 Talk to our team on WhatsApp and get an instant answer.
               </p>
               <ButtonLink
-                href={whatsappLink("Hi TechWiz! I have a question about your programs.")}
+                href={whatsappLink("Hi Techwiz! I have a question about your programs.")}
                 external
                 variant="accent"
                 className="mt-4"

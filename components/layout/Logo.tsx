@@ -5,7 +5,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Link
       href="/"
-      title="TechWiz STEM Academy — home"
+      title="Techwiz Robotics Hub — home"
       className={cn("group inline-flex items-center gap-2.5", className)}
     >
       <span className="relative grid size-9 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-lime-500 text-white shadow-soft transition-transform group-hover:scale-105">
@@ -27,10 +27,10 @@ export function Logo({ className }: { className?: string }) {
       </span>
       <span className="flex flex-col leading-none">
         <span className="font-display text-lg font-bold tracking-tight">
-          Tech<span className="text-primary">Wiz</span>
+          Tech<span className="text-primary">wiz</span>
         </span>
         <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-muted">
-          STEM Academy
+          Robotics Hub
         </span>
       </span>
     </Link>

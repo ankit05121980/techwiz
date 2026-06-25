@@ -11,6 +11,6 @@
     <path d="M16 32 L32 40 L48 32"/>
     <path d="M16 39 L32 47 L48 39"/>
   </g>
-  <text x="74" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#0F172A">TechWiz</text>
-  <text x="74" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#5b6577">STEM ACADEMY</text>
+  <text x="74" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#0F172A">Techwiz</text>
+  <text x="74" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="11" letter-spacing="2" fill="#5b6577">ROBOTICS HUB</text>
 </svg>

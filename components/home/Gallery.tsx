@@ -22,7 +22,7 @@ export function Gallery() {
     <Section id="gallery" className="bg-background-subtle">
       <SectionHeading
         eyebrow="Gallery"
-        title="Inside the TechWiz Experience"
+        title="Inside the Techwiz Experience"
         description="Builds, breakthroughs, and big smiles from our labs, workshops, and competitions."
       />
 

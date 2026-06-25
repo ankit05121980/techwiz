@@ -10,7 +10,7 @@ import { buildMetadata, jsonLdScript, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Admission & Free Demo Registration",
   description:
-    "Register for a free demo class or apply for admission to TechWiz STEM Academy's robotics, AI, and coding programs for Grade 3-12. Quick, easy multi-step form.",
+    "Register for a free demo class or apply for admission to Techwiz Robotics Hub's robotics, AI, and coding programs for Grade 3-12. Quick, easy multi-step form.",
   path: "/admission",
 });
 

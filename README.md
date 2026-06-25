@@ -1,6 +1,6 @@
-# TechWiz STEM Academy — Website
+# Techwiz Robotics Hub — Website
 
-A modern, premium, conversion-focused marketing website for **TechWiz STEM Academy**, a STEM learning academy (Robotics, AI, Coding, Electronics, IoT & Innovation) for school students in Grade 3–12.
+A modern, premium, conversion-focused marketing website for **Techwiz Robotics Hub**, a STEM learning academy (Robotics, AI, Coding, Electronics, IoT & Innovation) for school students in Grade 3–12.
 
 > **Tagline:** Learn. Build. Innovate.
 
@@ -12,7 +12,7 @@ Built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS v4**, **F
 
 **Pages**
 
-- **Home** — 10 sections: Hero (animated lab background + counters), Why TechWiz, Programs, Project Showcase, Learning Journey timeline, Testimonials carousel, School Collaborations, Gallery (filterable masonry + lightbox), YouTube, FAQ, Instagram, Final CTA.
+- **Home** — 10 sections: Hero (animated lab background + counters), Why Techwiz, Programs, Project Showcase, Learning Journey timeline, Testimonials carousel, School Collaborations, Gallery (filterable masonry + lightbox), YouTube, FAQ, Instagram, Final CTA.
 - **Programs** (`/courses`) + per-program detail (`/courses/[slug]`) — Junior Innovators, Future Engineers, Tech Explorers.
 - **About** — founder story, mission, vision, values, animated growth timeline.
 - **Contact** — lead form, WhatsApp CTA, contact cards, Google Maps embed (supports `?type=school`).

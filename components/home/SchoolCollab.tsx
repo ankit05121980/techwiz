@@ -28,7 +28,7 @@ export function SchoolCollab() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-4 max-w-lg text-white/70 md:text-lg">
-              Partner with TechWiz to launch a future-ready robotics and innovation
+              Partner with Techwiz to launch a future-ready robotics and innovation
               program on your campus — fully managed, from lab to curriculum to
               competitions.
             </p>

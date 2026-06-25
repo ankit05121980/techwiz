@@ -11,7 +11,7 @@ import { buildMetadata, jsonLdScript, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with TechWiz STEM Academy. Book a free demo class, ask about our robotics and coding programs, or set up STEM for your school.",
+    "Get in touch with Techwiz Robotics Hub. Book a free demo class, ask about our robotics and coding programs, or set up STEM for your school.",
   path: "/contact",
 });
 
@@ -50,7 +50,7 @@ export default async function ContactPage({
           <div className="space-y-4">
             <Reveal>
               <a
-                href={whatsappLink("Hi TechWiz! I'd like to book a free demo class.")}
+                href={whatsappLink("Hi Techwiz! I'd like to book a free demo class.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 rounded-3xl border border-lime-500/30 bg-lime-500/10 p-6 transition-colors hover:bg-lime-500/15"
@@ -66,8 +66,14 @@ export default async function ContactPage({
             </Reveal>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <InfoCard icon={<Phone className="size-5" />} title="Call Us" href={`tel:${siteConfig.phone}`}>
-                {siteConfig.phoneDisplay}
+              <InfoCard icon={<Phone className="size-5" />} title="Call Us">
+                <a href={`tel:${siteConfig.phone}`} className="hover:text-primary">
+                  {siteConfig.phoneDisplay}
+                </a>
+                <br />
+                <a href={`tel:${siteConfig.phone2}`} className="hover:text-primary">
+                  {siteConfig.phoneDisplay2}
+                </a>
               </InfoCard>
               <InfoCard icon={<Mail className="size-5" />} title="Email" href={`mailto:${siteConfig.email}`}>
                 {siteConfig.email}

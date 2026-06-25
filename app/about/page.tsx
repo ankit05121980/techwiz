@@ -13,7 +13,7 @@ import { buildMetadata, jsonLdScript, breadcrumbJsonLd } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "About Us",
   description:
-    "TechWiz STEM Academy was founded to make world-class, hands-on robotics and AI education accessible to students across India. Discover our story, mission, and vision.",
+    "Techwiz Robotics Hub was founded to make world-class, hands-on robotics and AI education accessible to students across India. Discover our story, mission, and vision.",
   path: "/about",
 });
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our Story"
         title="Building India's Next Generation of Innovators"
-        description="TechWiz started with a simple conviction: every child is a born maker. We exist to give them the tools, mentors, and confidence to build the future."
+        description="Techwiz started with a simple conviction: every child is a born maker. We exist to give them the tools, mentors, and confidence to build the future."
       />
 
       {/* Stats */}
@@ -52,7 +52,7 @@ export default function AboutPage() {
       {/* Founder story */}
       <Section className="bg-background-subtle">
         <div className="mx-auto max-w-3xl">
-          <SectionHeading eyebrow="Founder's Note" title="Why TechWiz Exists" align="left" />
+          <SectionHeading eyebrow="Founder's Note" title="Why Techwiz Exists" align="left" />
           <div className="mt-8 space-y-4 text-muted">
             <p>
               When our founder, a robotics engineer, returned to his hometown, he
@@ -61,7 +61,7 @@ export default function AboutPage() {
               granted. Textbooks talked about robots — but no one was building them.
             </p>
             <p>
-              TechWiz was born to close that gap. We started with one classroom and a
+              Techwiz was born to close that gap. We started with one classroom and a
               box of motors and sensors, teaching twelve children how to bring
               machines to life. The spark in their eyes told us everything.
             </p>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 and say, &lsquo;Now go build something the world hasn&apos;t seen.&rsquo;
               </blockquote>
               <figcaption className="mt-3 text-sm text-muted">
-                — Founder &amp; Chief Mentor, TechWiz STEM Academy
+                — Founder &amp; Chief Mentor, Techwiz Robotics Hub
               </figcaption>
             </figure>
           </Reveal>
@@ -174,7 +174,7 @@ export default function AboutPage() {
       <Section className="bg-background-subtle">
         <div className="overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-600 to-brand-700 p-10 text-center text-white md:p-14">
           <Compass className="mx-auto size-10 text-lime-300" />
-          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Join the TechWiz Family</h2>
+          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Join the Techwiz Family</h2>
           <p className="mx-auto mt-3 max-w-lg text-white/85">
             Give your child a head start with a free demo class. See the spark for
             yourself.

@@ -32,15 +32,15 @@ export default function OgImage() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: 34,
+              fontSize: 30,
               fontWeight: 800,
             }}
           >
-            TW
+            TRH
           </div>
           <div style={{ display: "flex", gap: 10, fontSize: 34, fontWeight: 700 }}>
-            <span>TechWiz</span>
-            <span style={{ color: "#8DC63F", fontWeight: 500 }}>STEM Academy</span>
+            <span>Techwiz</span>
+            <span style={{ color: "#8DC63F", fontWeight: 500 }}>Robotics Hub</span>
           </div>
         </div>
 

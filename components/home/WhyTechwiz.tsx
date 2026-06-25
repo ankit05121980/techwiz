@@ -11,8 +11,8 @@ export function WhyTechwiz() {
   return (
     <Section id="why" className="bg-background">
       <SectionHeading
-        eyebrow="Why TechWiz"
-        title="Why Parents Choose TechWiz"
+        eyebrow="Why Techwiz"
+        title="Why Parents Choose Techwiz"
         description="We blend rigorous STEM fundamentals with hands-on building, so students don't just learn technology — they create with it."
       />
 
